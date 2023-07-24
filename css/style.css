@@ -41,7 +41,7 @@ main{
 
 picture{
     display: flex;
-    padding-bottom: 15px;
+    padding: 20px 0px 20px;
 }
 
 picture img.menu-button,
@@ -82,7 +82,7 @@ header img.banner{
 
 section.main-content h1{
     font-weight: 900;
-    font-size: 2.2em;
+    font-size: 2.4em;
 
     margin-bottom: 15px;
 }
@@ -90,7 +90,7 @@ section.main-content h1{
 section.main-content p{
     font-weight: 200;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 section.main-content button{
@@ -104,7 +104,7 @@ section.main-content button{
 
     width: 200px;
     height: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 section.extra-content{
@@ -115,7 +115,7 @@ section.extra-content{
 
 section.extra-content h1{
     color:  hsl(35, 77%, 62%);
-    font-size: 1.7em;
+    font-size: 1.6em;
 }
 
 section.extra-content h2{
@@ -123,7 +123,7 @@ section.extra-content h2{
 
     font-size: 1em;
 
-    margin: 15px 0px 15px;
+    margin: 25px 0px 10px;
 }
 
 section.extra-content p{
@@ -134,7 +134,7 @@ section.extra-content p{
 }
 
 section.extra-content p.borde-botton{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 
     border-bottom: 1px solid white;
 }
