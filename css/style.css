@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+@font-face {
+    font-family: font1;
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf'),
+    url('../assets/fonts/static/Inter-Bold.ttf'),
+    url('../assets/fonts/static/Inter-ExtraBold.ttf'),
+    url('../assets/fonts/static/Inter-Regular.ttf') format(opentype
+    );
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    font-size: 1.2em;
+    font-family: 'font1';
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header,
+main{
+    max-width: 400px;
+    padding: 30px;
+}
+
+
+picture{
+    display: flex;
+}
+
+picture img.menu-button,
+picture img.title-w{
+    margin: 20px 0px;
+    width:  50px;
+    height: 30px;
+}
+
+header img.menu-button{
+    margin-left:230px;
+}
+
+nav ul.menu-list,
+li a{
+    text-decoration: none;
+    display: none;
+
+    color: black;
+
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+header img.menu-button:hover{
+    transition: 1s;
+    transform: scale(1.2);
+
+    cursor: pointer;
+}
+
+header img.banner{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 30px;
+
+}
+
+section.main-content h1{
+    font-weight: 900;
+    font-size: 2.2em;
+
+    margin-bottom: 30px;
+}
+
+section.main-content p{
+    font-weight: 200;
+
+    margin-bottom: 30px;
+}
+
+section.main-content button{
+    color: white;
+    background-color:hsl(240, 100%, 5%);
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.541);
+    border: none;
+
+    text-transform: uppercase;
+    font-size: 1em;
+
+    width: 200px;
+    height: 50px;
+    margin-bottom: 60px;
+}
+
+section.extra-content{
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+section.extra-content h1{
+    color:  hsl(35, 77%, 62%);
+    font-size: 1.7em;
+}
+
+section.extra-content h2{
+    color: white;
+
+    font-size: 1em;
+
+    margin: 30px 0px 30px;
+}
+
+section.extra-content p{
+    color: white;
+
+    font-size: 1em;
+    font-weight: 200;   
+}
+
+section.extra-content p.borde-botton{
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid white;
+}
+
+section.more-content span{
+    font-size: 2em;
+
+    color: hsl(233, 8%, 79%);
+
+    margin-bottom:20px;
+}
+
+section.more-content h2{
+    color: black;
+
+    font-size: .8em;
+
+    margin-bottom: 15px;
+}
+
+section.more-content img.img-more-option{
+    width: 120px;
+    height: 150px;
+    margin-right:20px;
+    float: left;
+}
+
+section.more-content p{
+    font-weight: 200;
+}
+section.more-content ul li{
+    margin-bottom: 100px;
+}
+
+section.main-content button:hover{
+    background-color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+section.extra-content h2:hover{
+    color:  hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+section.more-content h2:hover{
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+}
+
+footer{
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+    
+    background-color: hsl(240, 100%, 5%) ;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+
+    color: white;
+}
+
+footer a:hover{
+    color: hsl(5, 85%, 63%);
+}
