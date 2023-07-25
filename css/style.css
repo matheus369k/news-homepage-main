@@ -66,6 +66,10 @@ li a{
     font-weight: 300;
 }
 
+li a:hover{
+    color: hsl(5, 85%, 63%);
+}
+
 header img.menu-button:hover{
     transition: 1s;
     transform: scale(1.2);

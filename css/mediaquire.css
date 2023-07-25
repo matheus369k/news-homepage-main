@@ -1,0 +1,92 @@
+@media screen and (min-width:1225px){
+    header img.menu-button{
+        margin-left: 90%;
+    }
+
+    img.menu-button{
+        display: none;
+    }
+
+    nav ul.menu-list,
+    li a{
+        display: flex;
+        padding: 10px;
+        margin-top: -30px;
+        font-size: 1em;
+        
+    }
+
+    nav ul{
+        margin-left: 720px;
+    }
+
+    li a{
+        margin-right: 15px;
+    }
+
+    header,
+    main{
+        width: 100%;
+        max-width: 1224px;
+    }
+
+    header img.banner{
+        width: 800px;
+        height: 300px;
+    }
+
+    section.main-content{
+        width: 800px;
+    }
+
+    section.main-content h1{
+        font-size: 3em;
+        width: 400px;
+        float: left;
+    }
+
+    section.main-content p,
+    section.main-content button{
+        margin-left: 400px;
+        width: 400px;
+    }
+
+    section.main-content p{
+        font-size: 1em;
+    }
+
+    section.main-content button{
+        width: 230px;
+        height: 60px;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    section.extra-content{
+        margin-left: 20px;
+        width: 404px;
+        float: right;
+        height: 520px;
+        margin-top: -578px;
+    }
+
+    section.extra-content p.borde-botton{
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+
+    section.more-content{
+        display: flex;
+        flex-direction: row;
+    }
+
+    section.more-content ul li{
+        width: 404px;
+        display: inline-block;
+
+    }
+
+
+}
+
