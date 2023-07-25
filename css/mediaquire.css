@@ -1,4 +1,8 @@
 @media screen and (min-width:1225px){
+    body{
+        width: 95vw;
+    }
+
     header img.menu-button{
         margin-left: 90%;
     }
