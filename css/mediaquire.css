@@ -7,8 +7,8 @@
         display: none;
     }
 
-    nav ul.menu-list,
-    li a{
+    nav.off ul.menu-list,
+    nav.off  ul  li a{
         display: flex;
         padding: 10px;
         margin-top: -30px;
@@ -16,11 +16,12 @@
         
     }
 
-    nav ul{
-        margin-left: 720px;
+    nav.off ul{
+        margin-left: 720px; 
     }
 
     li a{
+        text-decoration: none;
         margin-right: 15px;
     }
 
@@ -68,7 +69,7 @@
         width: 404px;
         float: right;
         height: 520px;
-        margin-top: -578px;
+        margin-top: -570px;
     }
 
     section.extra-content p.borde-botton{
