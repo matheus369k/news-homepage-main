@@ -1,233 +1,230 @@
+/* set Reset*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 ul{
     list-style: none;
 }
 
-@font-face {
-    font-family: font1;
-    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf'),
-    url('../assets/fonts/static/Inter-Bold.ttf'),
-    url('../assets/fonts/static/Inter-ExtraBold.ttf'),
-    url('../assets/fonts/static/Inter-Regular.ttf') format(opentype
-    );
+/*font import and variable*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    --main-orange-color: hsl(35, 77%, 62%);
+    --main-red-color: hsl(5, 85%, 63%);
+    --main-light-color: hsl(36, 100%, 99%);
+    --main-darkgray-color: hsl(233, 8%, 79%);
+    --main-normaldark-color: hsl(236, 13%, 42%);
+    --main-extremedark-color: hsl(240, 100%, 5%);
 }
 
+/*main Styles*/
 
 body{
     height: 100vh;
-    width: 100vw;
-    padding: 20px;
-
     font-size: 1.2em;
-    font-family: 'font1';
-
-    background-color: rgb(255, 255, 255);
-
+    font-family: 'Inter', sans-serif;
+    background-color: var(--main-light-color);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-header,
-main{
-    background-color: white;
-    max-width: 400px;
+header {
+    display: grid;
+    grid-template-columns: 80vw 40px;
 }
 
-
-picture{
-    display: flex;
-    padding: 20px 0px 20px;
-}
-
-picture img.menu-button,
-picture img.title-w{
+.menu-button,
+.title-w{
     width: 40px;
     height: 30px;
+    grid-row-end: 1;
+    margin: 10px 0;
 }
 
-header img.menu-button{
-    z-index: 10;
-    margin-left:315px;
+.title-w {
+    grid-column: 1;
 }
 
-nav.on{
+.menu-button {
+    grid-template-columns: 40px;
+    grid-column: 2;
+    z-index: 1;
+}
+
+.on{
     width: 100%;
-    box-shadow: 0px 0px 100px 900px rgba(0, 0, 0, 0.459);
-    background-color: white;
+    box-shadow: -160px 0 rgba(0, 0, 0, 0.459);
+    background-color: var(--main-light-color);
     height: 100vh;
     margin-left: 120px;
-    margin-top: -90px;
-    padding-top: 150px;
+    padding-top: 100px;
     position: fixed;
-    
 }
 
-nav.on ul li{
+.on li{
     margin: 20px;
     padding: 5px 20px;
     padding-right: 200px;
 }
 
-nav.on ul li a{
-    
-    color: black;
 
+.off a,
+.on a{
+    color: var(--main-extremedark-color);
     font-size: 1.2em;
-    font-weight: 600;
-
-    text-decoration: none;
-
+    font-weight: 700;
 }
 
-nav.off ul.menu-list,
-nav.off ul li a{
+.off{
     display: none;
 }
 
-li a:hover{
-    color: hsl(5, 85%, 63%);
+nav a:hover{
+    color: var(--main-red-color);
 }
 
-header img.menu-button:hover{
+.menu-button:hover{
     transition: 1s;
-    transform: scale(1.001);
-
+    transform: scale(1.1);
     cursor: pointer;
 }
+main {
+    display: grid;
+    grid-template-columns: calc(80vw + 40px);
+}
 
-header img.banner{
+.main-content h1{
+    font-weight: 800;
+    font-size: 2em;
+    color: var(--main-extremedark-color);
+    margin-bottom: 15px;
+}
+
+.banner{
     width: 100%;
-    height: 80%;
-    margin-bottom: 15px;
-
+    height: 300px;
 }
 
-section.main-content h1{
-    font-weight: 900;
-    font-size: 2.4em;
-
-    margin-bottom: 15px;
-}
-
-section.main-content p{
-    font-weight: 200;
-
+.main-content p{
+    font-weight: 400;
     margin-bottom: 20px;
+    line-height: 28px;
+    color: var(--main-normaldark-color);
 }
 
-section.main-content button{
-    color: white;
-    background-color:hsl(240, 100%, 5%);
-    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.541);
+.main-content button{
+    color: var(--main-light-color);
+    background-color:var(--main-red-color);
+    box-shadow: 1px 1px 5px var(--main-extremedark-color);
     border: none;
-
     text-transform: uppercase;
     font-size: 1em;
-
     width: 200px;
     height: 50px;
     margin-bottom: 40px;
 }
 
-section.extra-content{
-    background-color: hsl(240, 100%, 5%);
+.main-content button:hover{
+    background-color: var(--main-extremedark-color);
+    cursor: pointer;
+}
+
+.extra-content{
+    background-color:var(--main-extremedark-color);
     padding: 20px;
     margin-bottom: 15px;
 }
 
-section.extra-content h1{
-    color:  hsl(35, 77%, 62%);
+.extra-content h2{
+    color:var(--main-orange-color);
     font-size: 1.6em;
+    font-weight: 800;
 }
 
-section.extra-content h2{
-    color: white;
+.extra-content h3{
+    color:var(--main-light-color);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 25px 0px 15px;
+}
 
+.extra-content h3:hover{
+    color: var(--main-orange-color);
+    cursor: pointer;
+}
+
+.extra-content p{
+    color: var(--main-light-color);
     font-size: 1em;
-
-    margin: 25px 0px 10px;
+    font-weight: 400;   
 }
 
-section.extra-content p{
-    color: white;
-
-    font-size: 1em;
-    font-weight: 200;   
-}
-
-section.extra-content p.borde-botton{
+.extra-content .borde-botton{
     padding-bottom: 20px;
-
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--main-light-color);
 }
 
-section.more-content span{
+.more-content ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.more-content span{
     font-size: 2em;
-
-    color: hsl(233, 8%, 79%);
-
+    color: var(--main-normaldark-color);
     margin-bottom:10px;
 }
 
-section.more-content h2{
-    color: black;
-
+.more-content h3{
+    color: var(--main-extremedark-color);
+    font-weight: 700;
     font-size: .9em;
-
     margin-bottom: 10px;
 }
 
-section.more-content img.img-more-option{
+.more-content h3:hover{
+    cursor: pointer;
+    color: var(--main-red-color);
+}
+
+.img-more-option{
     width: 100;
     height: 130px;
     margin-right:20px;
     float: left;
 }
 
-section.more-content p{
-    font-weight: 200;
+.more-content p{
+    font-weight: 400;
+    font-size: .6em;
 }
-section.more-content ul li{
+
+.more-content li{
     margin-bottom: 25px;
 }
 
-section.main-content button:hover{
-    background-color: hsl(5, 85%, 63%);
-    cursor: pointer;
-}
-
-section.extra-content h2:hover{
-    color:  hsl(35, 77%, 62%);
-    cursor: pointer;
-}
-
-section.more-content h2:hover{
-    cursor: pointer;
-    color: hsl(5, 85%, 63%);
-}
-
-footer{
-    width: 100vw;
+footer{ 
     padding: 10px;
-    text-align: center;
-    
-    background-color: hsl(240, 100%, 5%) ;
-    color: white;
+    width: 100%;
+    background-color: var(--main-normaldark-color);
+    color: var(--main-light-color);
+    font-size: .8em;
 }
 
+footer div,
 footer a{
-    text-decoration: none;
-
-    color: white;
+    font-size: .8em;
+    text-align: center;
 }
 
 footer a:hover{
-    color: hsl(5, 85%, 63%);
+    color: var(--main-orange-color);
 }

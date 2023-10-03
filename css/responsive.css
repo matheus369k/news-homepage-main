@@ -1,0 +1,130 @@
+@media (min-width:1024px){
+    body {
+        height: auto;
+        max-width: 1224px;
+        display: grid;
+        margin: auto;
+    }
+
+    header {
+        grid-row-start: 1;
+        grid-template-columns: 10% 90%;
+        grid-auto-rows: 50px;
+        padding: 40px 0;
+    }
+
+
+    header,
+    main{
+        max-width: 1224px;
+    }
+
+    .title-w {
+        padding-top: 5px;
+        height: 40px;
+        width: auto;
+    }
+
+    .menu-button{
+        display: none;
+    }
+
+    .off {
+        display: block;
+        
+    }
+
+    .off ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        gap: 30px;
+    }
+
+    .off a{
+        font-size: 1.2em;
+        margin-left: 0;
+        color: hsl(233, 8%, 79%);
+    }
+
+    main {
+        width: 100%;
+        grid-row-start: 2;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        gap: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+        display: grid;
+    }
+
+    .main-content {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+
+    .banner {
+        grid-row-start: 1;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-bottom: 20px;
+    }
+
+    .main-content h1 {
+        width: 100%;
+        font-size: 3em;
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    .main-content p {
+        font-size: 1em;
+        grid-row-start: 2;
+        grid-column-start: 2;
+        width: 100%;
+    }
+
+    .main-content button{
+        grid-row-start: 3;
+        grid-column-start: 2;
+        margin-top: -100px;
+    }
+
+    .extra-content {
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+
+    .more-content {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    }
+
+    .more-content ul{
+        margin-top: 50px;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .more-content li{
+        width: 33%;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
