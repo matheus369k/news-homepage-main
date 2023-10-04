@@ -2,7 +2,7 @@
  <div align="center">
   
  ![465](https://github.com/matheus369k/news-homepage-main/assets/47065962/3349bd95-038a-43ef-9f31-b6358f6b6ef9)</div>
- __*Nota*__: Esse projeto e uma simulação de uma pagina de noticias simples utilizando HTML, CSS e JavaScript, site desenvolvido como desafio do [front-end mentor](https://www.frontendmentor.io/home).
+ __*Nota*__: Esse projeto e uma simulação de uma pagina de noticias simples utilizando HTML, CSS e JavaScript, site desenvolvido como desafio do [Frontend Mentor](https://www.frontendmentor.io/home).
 ## 📋Linguagens utilizadas
 - HTML
 - CSS
