@@ -1,45 +1,20 @@
-# 💻news homepage main
-***
+# 💻news homepage
  <div align="center">
   
- ![2023-08-16-104043_1024x600_scrot](https://github.com/matheus369k/news-homepage-main/assets/47065962/0e6e3e10-1e5e-4e57-a3d9-d1d474536bd6)</div>
-
- __*Nota*__: Esse projeto tem como foco o desenvolvimento de um site, simulano a pagina principal. O site usa principalmente __CSS__.
- 
-## 🚀Começando
-***
-- [Linguagens utilizadas](#linguagens-utilizadas)
-- [Codigo](#codigo)
-   - [CSS](#css)
-   - [JavaScript](#javascript)
-- [Licença](#licença)
-
-### 📋Linguagens utilizadas
-***
-- HTML5
+ ![465](https://github.com/matheus369k/news-homepage-main/assets/47065962/3349bd95-038a-43ef-9f31-b6358f6b6ef9)</div>
+ __*Nota*__: Esse projeto e uma simulação de uma pagina de noticias simples utilizando HTML, CSS e JavaScript, site desenvolvido como desafio do [front-end mentor](https://www.frontendmentor.io/home).
+## 📋Linguagens utilizadas
+- HTML
 - CSS
 - JavaScript
-
-### 🧰Codigo
-***
-#### __*CSS*__
-Foi utilizado Media query para criaçāo da versāo 💻*desktop* e 📱*mobile*.
+##  📄Descrição 
 <div align="center">
  
-![Sem títuylo](https://github.com/matheus369k/news-homepage-main/assets/47065962/40f92a95-9741-4a5f-8fd6-07822b1d5d75)</div>
-
-#### __*JavaScript*__
-A unica funçāo adicionada foi para interaçāo com o menu, disponivel apenas na *versāo 📱mobile*...
-<div align="center">
-
-![Sem título0](https://github.com/matheus369k/news-homepage-main/assets/47065962/cd658b3c-f8ed-44a5-a984-4e5f40b889fa)</div>
-
-veja a imagem do codigo abaixo⬇️.
-<div align="center">
+![56563](https://github.com/matheus369k/news-homepage-main/assets/47065962/da85e883-db11-4c17-b03b-636161f41f39)</div>
+Na criaçao do projeto foi utilizado ```display: flex;``` e ```display: grid;``` como principais estilos para posicionar o conteudo no pagina, sendo o ```display: grid;``` tendo seu foco no style da versão acima de 1024px e  ```display: flex;``` em versões abaixo.<div align="center">
  
- ![2023-08-16-110750_1024x600_scrot](https://github.com/matheus369k/news-homepage-main/assets/47065962/ae13568a-34c9-4c3e-86a9-bc4fda8c90f4)</div>
+![464](https://github.com/matheus369k/news-homepage-main/assets/47065962/17ff9605-bceb-41f1-8bd8-f568e3a5b813)</div>
+Na criação das funções foi utilizado a detecção de click com o __addEventList__  e na detecção do tag do menu foi utilizado __Dom__ para encontrar a tag a ser altera, sendo utlizado trocas de classes para abrir e fechar o menu e trocando as imagens do menu de acordo a sua situação atual.
 
-### 📃Licença
-***
+## 📃Licença
 Licença utilizada (MIT) - veja [Licença](/LICENSE).
- 
