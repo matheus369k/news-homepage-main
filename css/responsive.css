@@ -1,27 +1,26 @@
-@media (min-width:1024px){
+@media (min-width:1024px) and (max-height: 1024px) {
     body {
         height: auto;
         max-width: 1224px;
+        overflow-x: hidden;
         display: grid;
         margin: auto;
     }
 
     header {
+        position: relative;
         grid-row-start: 1;
         grid-template-columns: 10% 90%;
         grid-auto-rows: 50px;
-        padding: 40px 0;
+        padding: 20px 10px;
     }
 
-
-    header,
-    main{
-        max-width: 1224px;
+    main {
+        margin-top: 0;
     }
 
     .title-w {
         padding-top: 5px;
-        height: 40px;
         width: auto;
     }
 
@@ -44,7 +43,7 @@
     }
 
     .off a{
-        font-size: 1.2em;
+        font-size: .9em;
         margin-left: 0;
         color: hsl(233, 8%, 79%);
     }
@@ -58,21 +57,17 @@
     }
 
     .main-content {
-        width: 100%;
         display: grid;
     }
 
     .main-content {
-        width: 100%;
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 0;
         grid-row-end: 1;
     }
 
     .banner {
         grid-row-start: 1;
-        width: 100%;
         grid-column-start: 1;
         grid-column-end: 3;
         margin-bottom: 20px;
@@ -89,7 +84,6 @@
         font-size: 1em;
         grid-row-start: 2;
         grid-column-start: 2;
-        width: 100%;
     }
 
     .main-content button{
@@ -99,9 +93,7 @@
     }
 
     .extra-content {
-        width: 100%;
         grid-column-start: 2;
-        grid-column-end: 2;
         grid-row-start: 0;
         grid-row-end: 1;
     }
@@ -127,4 +119,68 @@
         display: none;
     }
 }
+
+@media (min-width:768px) and (min-height:1024px) {
+    .title-w,
+    .menu-button{
+        margin: 20px 0;
+        height: 40px;
+        width: 50px;
+    }
+
+    .banner {
+        height: 500px;
+    }
+
+    .main-content h1 {
+        margin: 20px 0;
+        font-size: 2.2em;
+    }
+
+    .main-content p {
+        font-size: 1.1em;
+    }
+
+    .main-content button {
+        font-size: 1.2em;
+        width: 250px;
+        height: 70px;
+        margin-bottom: 50px;
+    }
+
+    .img-more-option {
+        width: 150px;
+        height: 200px;
+    }
+    
+    .more-content span {
+        font-size: 2.2em;
+    }
+
+    .more-content h3 {
+        font-size: 1.1em;
+    }
+
+    .more-content p {
+        font-size: .8em;
+    }
+
+}
+
+@media (max-width: 468px) {
+    .msg.on {
+        font-size: .8em;
+        width: 300px;
+        transform: translate(-90%, -50%);
+    }
+
+    
+.msg.on:hover {
+    padding: 42px 12px 42px 12px;
+    font-size: .8em;
+    height: 105px;
+    transition: .5s;
+}
+}
+
 

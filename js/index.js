@@ -15,3 +15,15 @@ buttonMenu.addEventListener('click', () =>{
         console.log(menu);}
 })
 
+function msg() {
+    const msg = document.querySelector(".msg")
+
+    msg.innerHTML = ("Page don't Added, i'm sorry.")
+
+    msg.classList.replace("off","on")
+    setTimeout(() => {
+        msg.classList.replace("on","off")
+    }, 2000)
+
+    msg.preventDefault()
+}
