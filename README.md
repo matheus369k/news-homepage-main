@@ -8,13 +8,14 @@
 - CSS
 - JavaScript
 ##  📄Descrição 
+Na criaçao do projeto foi utilizado ```display: flex;``` e ```display: grid;```, como principais estilos para posicionar o conteudo no pagina, sendo o ```display: grid;``` tendo seu foco no style da versão acima de 1024px e  ```display: flex;``` em versões abaixo.
 <div align="center">
  
-![56563](https://github.com/matheus369k/news-homepage-main/assets/47065962/da85e883-db11-4c17-b03b-636161f41f39)</div>
-Na criaçao do projeto foi utilizado ```display: flex;``` e ```display: grid;```, como principais estilos para posicionar o conteudo no pagina, sendo o ```display: grid;``` tendo seu foco no style da versão acima de 1024px e  ```display: flex;``` em versões abaixo.<div align="center">
- 
-![464](https://github.com/matheus369k/news-homepage-main/assets/47065962/17ff9605-bceb-41f1-8bd8-f568e3a5b813)</div>
-Na criação das funções foi utilizado a detecção de click com o __addEventList__, na detecção da tag do menu foi utilizado __Dom__, para encontrar a tag a ser altera, sendo utlizado trocas de classes para abrir e fechar o menu, trocando as imagens do menu de acordo a sua situação atual.
+![Sem 556](https://github.com/matheus369k/news-homepage-main/assets/47065962/db763b15-49d7-47df-ab57-2b9c6f546c91)</div>
+Na criação menu foi utilizado um detector de clique para indentifica-lo abrindo e fechando o menu, tendo sua imagens representativa que correspode ao estado do menu no momento.
+<div align="center">
+
+![jfkhcc](https://github.com/matheus369k/news-homepage-main/assets/47065962/4dd32883-97de-4cb0-b01c-6e505c2477ed)</div>
 
 ## 📃Licença
 Licença utilizada (MIT) - veja [Licença](/LICENSE).
